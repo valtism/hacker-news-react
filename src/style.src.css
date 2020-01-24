@@ -1,0 +1,8 @@
+@tailwind base;
+
+.comment p {
+  @apply mb-2;
+}
+
+@tailwind components;
+@tailwind utilities;
