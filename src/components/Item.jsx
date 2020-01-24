@@ -18,15 +18,15 @@ export function Item() {
   const location = useLocation();
   const [item, setItem] = useState(() => location.state || null);
   const [comments, setComments] = useState(null);
-  const id = location.search.slice(1);
+  const id = Number(location.search.slice(1));
 
   useEffect(() => {
-    if (item && item.id === location.search) {
+    if (item && item.id === id) {
       return;
     }
     // setItem(fakePost);
     getItem(id).then(setItem);
-  }, [location.search]);
+  }, [id, item]);
 
   useEffect(() => {
     if (!item || !item.kids) {
@@ -37,9 +37,11 @@ export function Item() {
   }, [item]);
 
   return (
-    <div>
+    <>
       {item && item.kids && <ListItem item={item} />}
-      {comments && comments.map(c => <Comment key={c.id} item={c} />)}
-    </div>
+      <div className="-ml-8 mt-2">
+        {comments && comments.map(c => <Comment key={c.id} item={c} />)}
+      </div>
+    </>
   );
 }

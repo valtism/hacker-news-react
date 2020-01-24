@@ -7,11 +7,12 @@ import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
 import { Item } from "./Item";
 
 export function App() {
-  const [stories, setStories] = useState(fakeStories());
-  // useEffect(() => {
-  //   getFrontPage()
-  //     .then(console.log);
-  // }, []);
+  const [stories, setStories] = useState();
+  // setStories(fakeStories());
+  useEffect(() => {
+    getFrontPage()
+      .then(setStories);
+  }, []);
   return (
     <Router history>
       <div className="w-screen h-screen bg-white">
@@ -23,7 +24,7 @@ export function App() {
                 <Item />
               </Route>
               <Route path="/">
-                {stories.map(story => (
+                {stories && stories.map(story => (
                   <ListItem key={story.id} item={story} />
                 ))}
               </Route>
