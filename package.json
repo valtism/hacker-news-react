@@ -23,7 +23,7 @@
     "build": "NODE_ENV='production' npm-run-all -s style && react:build",
     "react": "react-scripts start",
     "react:build": "react-scripts build",
-    "style": "postcss src/style.src.css -o src/index.css --watch",
+    "style": "postcss src/style.src.css -o src/index.css",
     "style:watch": "postcss src/style.src.css -o src/index.css --watch",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
