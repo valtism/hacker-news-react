@@ -20,7 +20,7 @@
   },
   "scripts": {
     "start": "npm-run-all -p style:watch react",
-    "build": "NODE_ENV='production' npm-run-all -s style && react:build",
+    "build": "NODE_ENV='production' npm-run-all -s style react:build",
     "react": "react-scripts start",
     "react:build": "react-scripts build",
     "style": "postcss src/style.src.css -o src/index.css",

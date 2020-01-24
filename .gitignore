@@ -1,5 +1,8 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+# index.css is generated at runtime
+/src/index.css
+
 # dependencies
 /node_modules
 /.pnp
