@@ -1,18 +1,19 @@
 const api = "https://hacker-news.firebaseio.com/v0";
 
+export const STORIES_PER_PAGE = 30;
+
 export function getItem(itemId) {
   return fetch(`${api}/item/${itemId}.json`).then(res => res.json());
 }
 
-export function getTopStories() {
-  return fetch(`${api}/topstories.json`).then(res => res.json());
+export function getStoryIds(type) {
+  return fetch(`${api}/${type}stories.json`).then(res => res.json());
 }
 
-export async function getFrontPage() {
-  const storyIds = await getTopStories();
-  const top30 = storyIds.slice(0, 30);
-  const stories = await Promise.all(top30.map(getItem));
-  return stories.filter(s => s.type === "story" && !s.dead && !s.deleted);
+export async function getPage(type, page) {
+  const storyIds = await getStoryIds(type);
+  const pageIds = storyIds.slice(page * 30, (page + 1) * 30);
+  return await Promise.all(pageIds.map(getItem));
 }
 
 export async function getComments(ids) {

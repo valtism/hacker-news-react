@@ -6,14 +6,6 @@ import { fakePost, fakeComments } from "../util/fakes";
 import { Comment } from "./Comment";
 import { ListItem } from "./ListItem";
 
-function download(data) {
-  let a = document.createElement("a");
-  a.href =
-    "data:application/octet-stream," + encodeURIComponent(JSON.stringify(data));
-  a.download = "comments.json";
-  a.click();
-}
-
 export function Item() {
   const location = useLocation();
   const [item, setItem] = useState(() => location.state || null);

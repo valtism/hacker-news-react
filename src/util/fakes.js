@@ -824,3 +824,11 @@ export function fakeComments() {
     }
   ];
 }
+
+export function download(data) {
+  let a = document.createElement("a");
+  a.href =
+    "data:application/octet-stream," + encodeURIComponent(JSON.stringify(data));
+  a.download = "comments.json";
+  a.click();
+}
