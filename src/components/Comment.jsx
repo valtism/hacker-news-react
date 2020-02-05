@@ -1,18 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { formatDistanceToNow } from "date-fns";
-import { getComments } from "../util/api";
 
-export function Comment({ item }) {
-  const { by, kids, text, time } = item;
-  const [kidItems, setKidItems] = useState([]);
+export function Comment({ items }) {
   const [show, setShow] = useState(true);
 
-  useEffect(() => {
-    if (!kids) {
-      return;
-    }
-    getComments(kids).then(setKidItems);
-  }, [kids]);
+  const { created_at, author, text, children } = items;
 
   return (
     <div className="ml-8">
@@ -38,9 +30,9 @@ export function Comment({ item }) {
         <div>
           <div className="text-gray-700 text-sm">
             <a className="hover:underline hover:text-black" href="#">
-              {by}
+              {author}
             </a>{" "}
-            <span>{formatDistanceToNow(new Date(time * 1000))} ago</span>
+            <span>{formatDistanceToNow(new Date(created_at))} ago</span>
             <button className="ml-1" onClick={() => setShow(show => !show)}>
               [-]
             </button>
@@ -60,7 +52,7 @@ export function Comment({ item }) {
           )}
         </div>
       </div>
-      {show && kidItems.map(item => <Comment key={item.id} item={item} />)}
+      {show && children.map(item => <Comment key={item.id} items={item} />)}
     </div>
   );
 }

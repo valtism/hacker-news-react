@@ -825,6 +825,397 @@ export function fakeComments() {
   ];
 }
 
+const newsPwa = () => {
+  return [
+    {
+      id: 22153304,
+      title:
+        "Access to Wikipedia restored in Turkey after more than two and a half years",
+      points: 439,
+      user: "EndXA",
+      time: 1580059621,
+      time_ago: "12 hours ago",
+      comments_count: 193,
+      type: "link",
+      url:
+        "https://wikimediafoundation.org/news/2020/01/15/access-to-wikipedia-restored-in-turkey-after-more-than-two-and-a-half-years/",
+      domain: "wikimediafoundation.org"
+    },
+    {
+      id: 22153665,
+      title: "GNU Recutils",
+      points: 321,
+      user: "carlesfe",
+      time: 1580062972,
+      time_ago: "11 hours ago",
+      comments_count: 91,
+      type: "link",
+      url: "https://labs.tomasino.org/gnu-recutils/",
+      domain: "labs.tomasino.org"
+    },
+    {
+      id: 22156873,
+      title: "Detroit's salt mine: City beneath the city",
+      points: 7,
+      user: "Jupe",
+      time: 1580099691,
+      time_ago: "25 minutes ago",
+      comments_count: 0,
+      type: "link",
+      url:
+        "https://www.detroitnews.com/picture-gallery/news/local/michigan-history/2020/01/26/detroit-salt-mine-city-beneath-city/4523991002/",
+      domain: "detroitnews.com"
+    },
+    {
+      id: 22154088,
+      title:
+        "Show HN: Text-to-speech and speech-to-text open-source software stack",
+      points: 195,
+      user: "ftreml",
+      time: 1580066562,
+      time_ago: "10 hours ago",
+      comments_count: 34,
+      type: "link",
+      url: "https://github.com/codeforequity-at/botium-speech-processing",
+      domain: "github.com"
+    },
+    {
+      id: 22152736,
+      title:
+        "Show HN: I built a website to better compare USB-C hubs found on Amazon",
+      points: 346,
+      user: "junkern",
+      time: 1580055037,
+      time_ago: "13 hours ago",
+      comments_count: 204,
+      type: "link",
+      url: "https://www.usb-hubs.org/",
+      domain: "usb-hubs.org"
+    },
+    {
+      id: 22153515,
+      title:
+        "Umbra: an ACID-compliant database built for in-memory analytics speed",
+      points: 177,
+      user: "pbowyer",
+      time: 1580061631,
+      time_ago: "11 hours ago",
+      comments_count: 60,
+      type: "link",
+      url: "https://umbra-db.com/",
+      domain: "umbra-db.com"
+    },
+    {
+      id: 22150966,
+      title: "Pygame Zero: Creating games without boilerplate",
+      points: 75,
+      user: "dvfjsdhgfv",
+      time: 1580024179,
+      time_ago: "21 hours ago",
+      comments_count: 12,
+      type: "link",
+      url: "https://pygame-zero.readthedocs.io/en/stable/index.html",
+      domain: "pygame-zero.readthedocs.io"
+    },
+    {
+      id: 22152633,
+      title: "Distri: 20x faster initramfs (initrd) from scratch",
+      points: 166,
+      user: "based2",
+      time: 1580054069,
+      time_ago: "13 hours ago",
+      comments_count: 46,
+      type: "link",
+      url:
+        "https://michael.stapelberg.ch/posts/2020-01-21-initramfs-from-scratch-golang/",
+      domain: "michael.stapelberg.ch"
+    },
+    {
+      id: 22152349,
+      title: "Pi Connects Colliding Blocks to a Quantum Search Algorithm",
+      points: 165,
+      user: "rudrarch",
+      time: 1580050927,
+      time_ago: "14 hours ago",
+      comments_count: 17,
+      type: "link",
+      url:
+        "http://abstractions.nautil.us/article/508/how-pi-connects-colliding-blocks-to-a-quantum-search-algorithm",
+      domain: "abstractions.nautil.us"
+    },
+    {
+      id: 22155843,
+      title: "Wolf Pups That Play Fetch",
+      points: 31,
+      user: "Hooke",
+      time: 1580084162,
+      time_ago: "5 hours ago",
+      comments_count: 14,
+      type: "link",
+      url:
+        "https://www.nytimes.com/2020/01/16/science/wolves-fetch-dogs-domestication.html",
+      domain: "nytimes.com"
+    },
+    {
+      id: 22154965,
+      title: "LA Fresh Poultry: A Store Where Los Angeles Converges",
+      points: 15,
+      user: "clairity",
+      time: 1580074557,
+      time_ago: "7 hours ago",
+      comments_count: 3,
+      type: "link",
+      url:
+        "https://www.nytimes.com/2019/12/21/style/la-fresh-poultry-immigrant-family-recipes.html",
+      domain: "nytimes.com"
+    },
+    {
+      id: 22150185,
+      title: "iOS First Impressions (2018)",
+      points: 37,
+      user: "luu",
+      time: 1580008936,
+      time_ago: "a day ago",
+      comments_count: 44,
+      type: "link",
+      url:
+        "https://basicbitch.software/posts/2018-11-20-iOS-First-Impressions.html",
+      domain: "basicbitch.software"
+    },
+    {
+      id: 22154490,
+      title: "Gravity: Upstream Kubernetes packaging tools",
+      points: 70,
+      user: "gk1",
+      time: 1580070135,
+      time_ago: "9 hours ago",
+      comments_count: 30,
+      type: "link",
+      url: "https://github.com/gravitational/gravity",
+      domain: "github.com"
+    },
+    {
+      id: 22152923,
+      title: "Entropy in the Universe",
+      points: 89,
+      user: "chmaynard",
+      time: 1580056566,
+      time_ago: "12 hours ago",
+      comments_count: 31,
+      type: "link",
+      url:
+        "https://johncarlosbaez.wordpress.com/2020/01/25/entropy-in-the-universe/",
+      domain: "johncarlosbaez.wordpress.com"
+    },
+    {
+      id: 22151474,
+      title:
+        "Linux 5.5 to Offer Mainline Support for SGI's Octane MIPS Workstations",
+      points: 79,
+      user: "dcminter",
+      time: 1580035675,
+      time_ago: "18 hours ago",
+      comments_count: 48,
+      type: "link",
+      url:
+        "https://www.phoronix.com/scan.php?page=news_item&px=Linux-5.5-MIPS-SGI-Octane",
+      domain: "phoronix.com"
+    },
+    {
+      id: 22154462,
+      title: "Correct SRGB Dithering",
+      points: 41,
+      user: "ingve",
+      time: 1580069952,
+      time_ago: "9 hours ago",
+      comments_count: 10,
+      type: "link",
+      url: "http://www.thetenthplanet.de/archives/5367",
+      domain: "thetenthplanet.de"
+    },
+    {
+      id: 22152698,
+      title: "Cartographer: Tool for String Diagrammatic Reasoning",
+      points: 11,
+      user: "adamnemecek",
+      time: 1580054721,
+      time_ago: "13 hours ago",
+      comments_count: 4,
+      type: "link",
+      url: "http://cartographer.id",
+      domain: "cartographer.id"
+    },
+    {
+      id: 22153028,
+      title: "PFAS â€œForever Chemicalsâ€ and Nordic Ski Wax",
+      points: 108,
+      user: "mimixco",
+      time: 1580057270,
+      time_ago: "12 hours ago",
+      comments_count: 42,
+      type: "link",
+      url:
+        "https://www.outsideonline.com/2408206/nordic-skiing-fluorinated-wax-swix",
+      domain: "outsideonline.com"
+    },
+    {
+      id: 22150603,
+      title: "Ambitions for a Unix Shell",
+      points: 73,
+      user: "luu",
+      time: 1580018050,
+      time_ago: "a day ago",
+      comments_count: 34,
+      type: "link",
+      url: "https://www.oilshell.org/blog/2020/01/ambitions.html",
+      domain: "oilshell.org"
+    },
+    {
+      id: 22151843,
+      title: "Royal Ordnance Factory Bishopton (2009)",
+      points: 21,
+      user: "watchdogtimer",
+      time: 1580043244,
+      time_ago: "16 hours ago",
+      comments_count: 2,
+      type: "link",
+      url:
+        "http://catchingphotons.co.uk/blog/explosives/royal-ordnance-factory-bishopton/",
+      domain: "catchingphotons.co.uk"
+    },
+    {
+      id: 22156308,
+      title: "Photo of a suspended, glowing single atom wins photography prize",
+      points: 27,
+      user: "Anon84",
+      time: 1580090496,
+      time_ago: "3 hours ago",
+      comments_count: 11,
+      type: "link",
+      url:
+        "https://bigthink.com/news/photo-of-a-single-atom-wins-science-photography-prize",
+      domain: "bigthink.com"
+    },
+    {
+      id: 22156426,
+      title:
+        "Circle Medical Is Hiring Care Coordinators in Montreal to Modernize Healthcare",
+      points: null,
+      user: null,
+      time: 1580092166,
+      time_ago: "3 hours ago",
+      comments_count: 0,
+      type: "job",
+      url:
+        "https://jobs.lever.co/circlemedical/2ec712af-44f3-492d-8394-c737d0cf4a68?lever-origin=applied&lever-source%5B%5D=HACKERNEWS",
+      domain: "jobs.lever.co"
+    },
+    {
+      id: 22149537,
+      title: "In Search of Types (2014) [pdf]",
+      points: 10,
+      user: "luu",
+      time: 1579997962,
+      time_ago: "a day ago",
+      comments_count: 0,
+      type: "link",
+      url:
+        "https://www.cs.kent.ac.uk/people/staff/srk21/research/papers/kell14in-author-version.pdf",
+      domain: "cs.kent.ac.uk"
+    },
+    {
+      id: 22156370,
+      title: "Unison: A Content-Addressable Programming Language",
+      points: 11,
+      user: "sillysaurusx",
+      time: 1580091388,
+      time_ago: "3 hours ago",
+      comments_count: 1,
+      type: "link",
+      url: "https://www.unisonweb.org/docs/tour/",
+      domain: "unisonweb.org"
+    },
+    {
+      id: 22155529,
+      title:
+        "David Rosenhanâ€™s fraudulent Thud experiment set back psychiatry for decades",
+      points: 66,
+      user: "lcaff",
+      time: 1580080409,
+      time_ago: "6 hours ago",
+      comments_count: 77,
+      type: "link",
+      url:
+        "https://www.spectator.co.uk/2020/01/how-david-rosenhans-fraudulent-thud-experiment-set-back-psychiatry-for-decades/",
+      domain: "spectator.co.uk"
+    },
+    {
+      id: 22156140,
+      title:
+        "Clinical features of patients infected with 2019 novel coronavirus",
+      points: 30,
+      user: "SQL2219",
+      time: 1580088134,
+      time_ago: "4 hours ago",
+      comments_count: 3,
+      type: "link",
+      url:
+        "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)30183-5/fulltext",
+      domain: "thelancet.com"
+    },
+    {
+      id: 22151396,
+      title: "Responsive Pixel Art",
+      points: 489,
+      user: "fctorial",
+      time: 1580034274,
+      time_ago: "19 hours ago",
+      comments_count: 42,
+      type: "link",
+      url: "http://essenmitsosse.de/pixel/",
+      domain: "essenmitsosse.de"
+    },
+    {
+      id: 22148412,
+      title: "Chord Transformations and Beethoven (2011) [pdf]",
+      points: 52,
+      user: "miobrien",
+      time: 1579983714,
+      time_ago: "a day ago",
+      comments_count: 12,
+      type: "link",
+      url:
+        "https://minds.wisconsin.edu/bitstream/handle/1793/55613/KnaufSpr11.pdf?sequence=1",
+      domain: "minds.wisconsin.edu"
+    },
+    {
+      id: 22152408,
+      title:
+        "Ask HN: What do you regret you didn't know when programming for iOS or Android?",
+      points: 182,
+      user: "toron123",
+      time: 1580051758,
+      time_ago: "14 hours ago",
+      comments_count: 131,
+      type: "ask",
+      url: "item?id=22152408"
+    },
+    {
+      id: 22155975,
+      title: "Elizabeth Holmes representing herself in Arizona civil case",
+      points: 175,
+      user: "fortran77",
+      time: 1580085951,
+      time_ago: "4 hours ago",
+      comments_count: 127,
+      type: "link",
+      url:
+        "https://www.mercurynews.com/2020/01/24/theranos-founder-holmes-phones-in-to-court-hearing-solo-after-lawyers-say-she-stiffed-them-report/",
+      domain: "mercurynews.com"
+    }
+  ];
+}
+
 export function download(data) {
   let a = document.createElement("a");
   a.href =

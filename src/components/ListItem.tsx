@@ -1,13 +1,17 @@
 import React from "react";
 import formatDistanceToNow from "date-fns/formatDistanceToNow";
 import { Link } from "react-router-dom";
+import { ListItemType } from "../util/types";
 
-export function ListItem({ item }) {
-  // Fix this so we have a proper loading state
-  if (!(typeof item === "object" && item !== null)) {
-    return <div>Loading...</div>;
-  }
-  const { id, title, url, score, by, time, descendants } = item;
+export function ListItem({
+  objectID,
+  url,
+  title,
+  points,
+  author,
+  created_at,
+  num_comments
+}: ListItemType) {
   return (
     <div className="flex mb-2 items-center">
       <div>
@@ -28,25 +32,23 @@ export function ListItem({ item }) {
       </div>
       <div>
         <div className="flex items-baseline">
-          <a className="mr-2" href={url}>
-            {title}
-          </a>
+          <a href={url}>{title}</a>
           {url && (
-            <div className="text-sm text-gray-700">
+            <div className="text-sm ml-1 text-gray-700">
               (<span>{new URL(url).hostname}</span>)
             </div>
           )}
         </div>
         <div className="flex text-xs">
           <div className="mr-2 text-gray-700">
-            {score} points by {by} {formatDistanceToNow(new Date(time * 1000))}{" "}
-            ago
+            {points} points by {author}{" "}
+            {formatDistanceToNow(new Date(created_at))} ago
           </div>
           <Link
             className="hover:underline"
-            to={{ pathname: "/item", search: `?${id}`, state: { item } }}
+            to={{ pathname: "/item", search: `?id=${objectID}` }}
           >
-            {descendants} Comments
+            {num_comments} Comments
           </Link>
         </div>
       </div>
