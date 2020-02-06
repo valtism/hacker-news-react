@@ -43,7 +43,7 @@ export function Comment({ items }) {
                 className="comment"
                 dangerouslySetInnerHTML={{ __html: text }}
               ></div>
-              <div className="text-sm">
+              <div className="text-sm text-gray-700">
                 <a className="underline" href="#">
                   reply
                 </a>

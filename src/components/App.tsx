@@ -18,6 +18,9 @@ export function App() {
               <Route path="/news">
                 <List />
               </Route>
+              <Route path="/new">
+                <List />
+              </Route>
               <Route path="/item">
                 <Item />
               </Route>

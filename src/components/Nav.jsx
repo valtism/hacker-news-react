@@ -7,7 +7,7 @@ export function Nav() {
       <Link to="/news" className="mx-1 font-bold">
         Hacker News
       </Link>
-      <Link to="/news" className="mx-1">
+      <Link to="/new" className="mx-1">
         new |
       </Link>
       <Link to="/news" className="mx-1">
